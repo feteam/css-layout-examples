@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, maximum-sacle=1.0, minimum-scale=1.0, user-scalable=no">
+  <style type="text/css">
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+/* 详情页--立即购买部分 开始 */
+
+/*使立即购买弹窗隐藏*/
+/*
+.layer-backdrap,
+.layer-buy-choose {
+  display: none;
+}
+*/
+
+.layer-backdrap {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .6);
+}
+
+.layer-buy-choose {
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 250px;
+  background: #fff;
+}
+
+.layer-buy-choose .goods {
+  padding: 10px;
+  overflow: hidden;
+}
+
+.layer-buy-choose .layer-buy-pic {
+  float: left;
+  width: 80px;
+  height: 80px;
+}
+
+.layer-buy-choose .layer-buy-text {
+  margin-left: 90px;
+}
+
+.layer-buy-choose .layer-buy-text .price {
+  color: #f66;
+}
+
+.layer-buy-choose .layer-buy-title {
+  margin: 0 10px;
+  padding-top: 5px;
+  border-top: 1px solid #ddd;
+}
+
+.layer-buy-choose .buy-nums {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.layer-buy-choose .buy-nums .btn {
+  float: left;
+  width: 28px;
+  height: 24px;
+  line-height: 24px;
+  border: 1px solid #ccc;
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.layer-buy-choose .buy-nums .ipt {
+  float: left;
+  width: 36px;
+  height: 24px;
+  padding: 0 5px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  font-size: 12px;
+}
+
+.layer-buy-choose .buy-nums .kc {
+  float: left;
+  margin-left: 10px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.layer-buy-choose .btn-buy {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  background: #fd5004;
+  text-align: center;
+  color: #fff;
+}
+/* 详情页--立即购买部分 结束 */
+  </style>
+</head>
+<body>
+
+
+<!-- 加入购物车弹出层 开始 -->
+<div class="layer-buy-choose">
+  <div class="goods">
+    <img class="layer-buy-pic" src="images/per-hd-bg.jpg">
+    <div class="layer-buy-text">
+      <p class="name">拉萨积分卢萨卡就放来看乐山大佛阿里上看见</p>
+      <span class="price">￥88</span>
+    </div>
+  </div>
+  <p class="layer-buy-title">购买数量</p>
+  <div class="buy-nums">
+    <a class="btn btn-minus" href="#">-</a>
+    <input class="ipt" type="text" value="1">
+    <a class="btn btn-add" href="#">+</a>
+    <span class="kc">库存充足</span>
+  </div>
+  <a class="btn-buy">立即购买</a>
+</div>
+<div class="layer-backdrap"></div>
+<!-- 加入购物车弹出层 结束 -->
+
+</body>
+</html>
